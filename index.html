@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="card-panel hoverable light-blue lighten-3">
+            <div class="col s12"><h1>Arboles Binarios</h1></div>
+        </header>
+
+        <nav>
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Menú</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" onclick="findNode( )">Buscar Nodo</a></li>
+                    <li><a href="#" onclick="findFather()">Buscar Padre</a></li>
+                    <li><a href="#" onclick="gradeNode( )">Grado Nodo</a></li>
+                    <li><a href="#" onclick="weightTree( )">Peso Arbol</a></li>
+                    <li><a href="#" onclick="heightNode()">Altura Nodo</a></li>
+                    <li><a href="#" onclick="heightTree()">Altura Arbol</a></li>
+                    <li><a href="#" onclick="levelNode()">Nivel Nodo</a></li>
+                    <li><a href="#" onclick="deleteNode()">Eliminar Nodo</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#" onclick="findNode( )">Buscar Nodo</a></li>
+                    <li><a href="#" onclick="findFather()">Buscar Padre</a></li>
+                    <li><a href="#" onclick="gradeNode( )">Grado Nodo</a></li>
+                    <li><a href="#" onclick="weightTree( )">Peso Arbol</a></li>
+                    <li><a href="#" onclick="heightNode()">Altura Nodo</a></li>
+                    <li><a href="#" onclick="heightTree()">Altura Arbol</a></li>
+                    <li><a href="#" onclick="levelNode()">Nivel Nodo</a></li>
+                    <li><a href="#" onclick="deleteNode()">Eliminar Nodo</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m5">
+                    <table>
+                        <thead>
+                            <tr><th colspan="2" style="text-align:center">Datos Hardware</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Identificador</td><td><input type="text" id="idHardware"></td></tr>
+                            <tr><td>Marca</td><td><input type="text" id="brand"></td></tr>
+                            <tr><td>Descripci&oacute;n</td><td><input type="text" id="description" size="30"></td></tr>
+                            <tr><td>Valor</td><td><input type="number" id="value"></td></tr>
+                            <tr><td colspan="2" style="text-align:center">
+                                    <button class="btn waves-effect waves-light" type="submit" name="action" onclick="insertNode()">Enviar
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col s12 m7">
+                    <h2>Listado de Nodos</h2>
+                    <input name="list" type="radio" id="preorden" value="PrO" onclick="listNodes( )" checked />
+                    <label for="preorden">Preorden</label>
+
+                    <input name="list" type="radio" id="inorden" value="InO" onclick="listNodes( )"/>
+                    <label for="inorden">Inorden</label>
+
+                    <input name="list" type="radio" id="posorden" value="PsO" onclick="listNodes( )"/>
+                    <label for="posorden">Posorden</label>
+
+                   <!-- <input name="list" type="radio" id="ampDown" value="AmD"/>
+                    <label for="ampDown">Amplitud Abajo</label>
+
+                    <input name="list" type="radio" id="ampTop" value="AmT" />
+                    <label for="ampTop">Amplitud Arriba</label>-->
+
+                    <table class="striped" id="tabList">
+                        <thead>
+                            <tr><th>Id Hardware</th>
+                                <th>Marca</th>
+                                <th>Descripci&oacute;n</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <i class="material-icons">copyright</i> 2014 Copyright Text
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2017, 3:33:35 PM
+    Author     : JairoArmando
+*/
+header, nav, section, footer, figure, figcaption, aside, hgroup{
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+#main_content{
+    width: 1200px;
+    margin: 20px auto;
+    text-align: left;
+    border: 2px solid darkseagreen;
+}
+
+#header{
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid graytext; 
+}
+
+#content{
+    margin: 10px;
+    padding: 5px;
+}
+
+#menu{
+    margin: 5px;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+}
+
+#menu li{
+    display:inline;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+}
+
+a:link {
+    color: orange; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#foot{
+    clear:both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid darkcyan;
+}
+
+#box_search{
+    width: 220px;
+    margin: 5px;
+    background: antiquewhite;
+    border-radius: 10px;
+    float: right;
+    padding: 5px;
+}
+
+#box_input{
+    width: 420px;
+    margin: 5px;
+    background: antiquewhite;
+    float: left;
+    padding: 5px;
+    border: 1px blueviolet dotted;
+}
+
+#box_list{
+   width: 704px;
+   margin: 5px;
+   background: darkgray;
+   float: right;
+   padding: 5px;
+   border: 1px blueviolet dotted; 
+}
+
+#box_list h2{
+    text-align: center;
+    color: chocolate;
+    border-bottom: 1px solid black;
+}
